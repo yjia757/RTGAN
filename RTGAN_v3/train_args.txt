@@ -1,0 +1,11 @@
+[arguments]
+RESIZE            = 'false'                     help = if resize images down to 100 for training
+NUM_EPOCHS        = 1583                        help = total number of training epochs  
+TRAIN_BATCH_SIZE  = 16                          help = train batch size
+TRAIN_NUM_WORKERS = 4                           help = number of workders for train dataloader
+LR                = 0.0001                      help = start learning rate
+CKP_D             = './checkpoint/model_D.pth'  help = Discriminator checkpoint path 
+CKP_G             = './checkpoint/model_G.pth'  help = Generator checkpoint path 
+MSE_OR_VGG        = 'vgg'                       help = using mse or vgg loss 
+TRAIN_DATA_PATH   = '/dockerx/rtgan_data/folder5_all'  help = training dataset location 
+VAL_DATA_PATH     = '/dockerx/rtgan_data/validation'   help = validation dataset location 

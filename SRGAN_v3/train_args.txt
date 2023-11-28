@@ -1,0 +1,12 @@
+[arguments]
+CROP_SIZE         = 88                           help = training images crop size
+UPSCALE_FACTOR    = 4                            help = super resolution upscale factor [2, 4, 8]
+NUM_EPOCHS        = 910                          help = total numer of training epochs
+TRAIN_BATCH_SIZE  = 16                           help = train batch size
+TRAIN_NUM_WORKERS = 4                            help = number of workders for train dataloader
+LR                = 0.0001                       help = start learning rate
+CKP_D             = './checkpoint/model_D.pth'   help = Discriminator checkpoint path
+CKP_G             = './checkpoint/model_G.pth'   help = Generator checkpoint path 
+MSE_OR_VGG        = 'vgg'                        help = using mse or vgg loss
+TRAIN_DATA_PATH   = '/dockerx/data/sum_train'    help = training dataset location 
+VAL_DATA_PATH     = '/dockerx/data/val'          help = validation dataset location 
